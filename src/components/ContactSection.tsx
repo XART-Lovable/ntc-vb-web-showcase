@@ -57,7 +57,7 @@ const ContactSection = () => {
             
             <div className="h-64 bg-muted rounded overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.8!2d16.0!3d49.29!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDE3JzI0LjAiTiAxNsKwMDAnMDAuMCJF!5e0!3m2!1scs!2scz!4v1234567890"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Košíkov+81,+595+01+Velká+Bíteš&zoom=15"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
