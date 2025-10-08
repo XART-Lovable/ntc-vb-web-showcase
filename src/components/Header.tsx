@@ -1,5 +1,5 @@
 import { Phone, Mail } from "lucide-react";
-import ntcLogo from "@/assets/ntc-logo.jpg";
+import ntcLogo from "@/assets/ntc-logo-hq.jpg";
 
 const Header = () => {
   return (
@@ -7,7 +7,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img src={ntcLogo} alt="NTC s.r.o." className="h-16 w-auto" />
+            <img src={ntcLogo} alt="NTC s.r.o." className="h-20 w-auto" style={{ imageRendering: 'auto' }} />
           </div>
           
           <div className="flex items-center gap-6">
