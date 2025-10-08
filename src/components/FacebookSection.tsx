@@ -1,49 +1,46 @@
-import { Facebook } from "lucide-react";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
+import gallery5 from "@/assets/gallery-5.jpg";
+import gallery6 from "@/assets/gallery-6.jpg";
 
 const FacebookSection = () => {
+  const images = [
+    { src: gallery1, alt: "MAN tahač s klienty" },
+    { src: gallery2, alt: "Mercedes-Benz s návěsem Skalak Transport" },
+    { src: gallery3, alt: "MAN T-Agro nákladní vozidlo" },
+    { src: gallery4, alt: "Modré MAN tahače v řadě" },
+    { src: gallery5, alt: "MAN tahač v servisu" },
+    { src: gallery6, alt: "Mercedes-Benz předání vozidla" },
+  ];
+
   return (
     <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <Facebook className="h-8 w-8 text-primary" />
-            <h2 className="text-3xl font-bold text-foreground-dark">Sledujte nás na Facebooku</h2>
-          </div>
+          <h2 className="text-3xl font-bold text-foreground-dark mb-4">Naše reference a realizace</h2>
           <p className="text-foreground max-w-2xl mx-auto">
-            Buďte v obraze o našich nejnovějších vozidlech, speciálních nabídkách a aktuálním dění v NTC s.r.o.
+            Podívejte se na naše úspěšně dodané projekty a spokojené zákazníky.
           </p>
         </div>
-        
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-card p-6 shadow-lg">
+
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+          {images.map((image, index) => (
             <div 
-              className="fb-page" 
-              data-href="https://www.facebook.com/hesti.cz/pobocky/ntc-s-r-o-prodej/" 
-              data-tabs="timeline" 
-              data-width="500" 
-              data-height="600" 
-              data-small-header="false" 
-              data-adapt-container-width="true" 
-              data-hide-cover="false" 
-              data-show-facepile="true"
+              key={index}
+              className={`relative overflow-hidden rounded-sm group cursor-pointer ${
+                index === 0 ? 'md:col-span-2 md:row-span-2' : ''
+              }`}
             >
-              <blockquote cite="https://www.facebook.com/hesti.cz/pobocky/ntc-s-r-o-prodej/" className="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/hesti.cz/pobocky/ntc-s-r-o-prodej/">NTC s.r.o. - Prodej</a>
-              </blockquote>
+              <img 
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-foreground-dark/0 group-hover:bg-foreground-dark/20 transition-colors duration-300" />
             </div>
-          </div>
-          
-          <div className="text-center mt-8">
-            <a 
-              href="https://www.facebook.com/hesti.cz/pobocky/ntc-s-r-o-prodej/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 font-semibold hover:bg-primary/90 transition-colors"
-            >
-              <Facebook className="h-5 w-5" />
-              Navštívit naši stránku
-            </a>
-          </div>
+          ))}
         </div>
       </div>
     </section>
