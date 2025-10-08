@@ -1,5 +1,5 @@
 import { Phone, Mail } from "lucide-react";
-import ntcLogo from "@/assets/ntc-logo-hq.jpg";
+import ntcLogo from "@/assets/ntc-velka-bites.png";
 
 const Header = () => {
   return (
