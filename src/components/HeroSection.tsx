@@ -30,9 +30,7 @@ const HeroSection = () => {
         
         <div className="container mx-auto px-4 h-full relative z-10">
           <div className="flex flex-col justify-center h-full max-w-3xl">
-            <h1 className="text-5xl font-bold text-background mb-6 leading-tight">
-              NTC S.R.O.
-            </h1>
+            <h1 className="text-5xl font-bold text-background mb-6 leading-tight">NTC</h1>
             <p className="text-xl text-background leading-relaxed">Přední český dodavatel a servis skladových a nákladních vozidel značky MAN i dalších značek. Poskytujeme komplexní řešení od prodeje nových i ojetých vozidel přes vlastní výrobu nástaveb až po autorizovaný servis. Díky dlouholetým zkušenostem a rozsáhlé servisní síti jsme spolehlivým partnerem pro všechny profesionály v oblasti užitkové dopravy.</p>
           </div>
         </div>
