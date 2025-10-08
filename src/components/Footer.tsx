@@ -30,70 +30,76 @@ const Footer = () => {
               </DialogTrigger>
               <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto">
                 <DialogHeader>
-                  <DialogTitle>Zásady zpracování osobních údajů</DialogTitle>
+                  <DialogTitle>Informace o zpracování osobních údajů</DialogTitle>
                 </DialogHeader>
                 <div className="prose prose-sm max-w-none">
                   <p>
-                    V souladu s nařízením Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů (dále jen „GDPR") Vás informujeme o zpracování Vašich osobních údajů a o Vašich právech.
+                    V kontextu vzájemného obchodního vztahu s naší společností dochází ke zpracování osobních údajů zákazníků, klientů a jiných současných či potencionálních obchodních partnerů.
+                  </p>
+                  
+                  <p>
+                    Osobní údaje fyzických osob jsou zpracovávány v souladu se zněním General Data Protection Regulation, nařízením Evropského parlamentu a Rady (EU) č. 2016/679, o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů (obecné nařízení o ochraně osobních údajů) - dále v textu jen „GDPR", vnitřními předpisy společnosti a právními předpisy.
                   </p>
                   
                   <h3 className="font-bold mt-6 mb-3">1. Správce osobních údajů</h3>
                   <p>
-                    Správcem Vašich osobních údajů je:
-                    <br />
-                    <strong>NTC, s.r.o.</strong>
-                    <br />
-                    Bantice 72, 671 61 Prosiměřice
-                    <br />
-                    IČO: 46905138
+                    Správce osobních údajů se odvíjí v závislosti na konkrétním právním vztahu s dotčenou fyzickou osobou.
                   </p>
                   
-                  <h3 className="font-bold mt-6 mb-3">2. Účel zpracování osobních údajů</h3>
-                  <p>
-                    Vaše osobní údaje zpracováváme za účelem:
-                  </p>
+                  <p>Správcem osobních údajů je obchodní společnost:</p>
                   <ul>
-                    <li>Vyřízení Vašeho dotazu nebo objednávky</li>
-                    <li>Poskytování našich služeb</li>
-                    <li>Splnění zákonných povinností</li>
-                    <li>Marketingové účely (pouze se Vaším souhlasem)</li>
+                    <li><strong>BÍTEŠSKÁ DOPRAVNÍ SPOLEČNOST, spol. s r.o.</strong>, IČ: 46962816, se sídlem Velká Bíteš, Vlkovská 334, PSČ: 595 01, zapsaná v obchodním rejstříku vedeném Krajským soudem v Brně, oddíl C, vložka 6471,</li>
+                    <li>a nebo obchodní společnost <strong>BDS-BUS, s.r.o.</strong>, IČ: 253 02 078, se sídlem Velká Bíteš, Vlkovská 334, PSČ: 595 01, zapsána v obchodním rejstříku vedeném Krajským soudem v Brně, oddíl C, vložka 23636,</li>
+                    <li>a nebo obchodní společnost <strong>BDS-TRUCK, s.r.o.</strong>, IČ: 255 04 924, se sídlem Velká Bíteš, Vlkovská 334, PSČ: 595 01, zapsána v obchodním rejstříku vedeném Krajským soudem v Brně, oddíl C, vložka 27999,</li>
+                    <li>a nebo obchodní společnost <strong>NTC, s.r.o.</strong>, IČ: 469 05 138, se sídlem Prosiměřice, Bantice 72, PSČ: 671 61, zapsaná v obchodním rejstříku vedeném Krajským soudem v Brně, oddělení C, vložka 6158,</li>
+                  </ul>
+                  <p>(dále v textu společně jen „společnost").</p>
+                  
+                  <p><strong>Kontaktní údaje:</strong></p>
+                  <ul>
+                    <li>Ing. Michal Kliment, tel.: +420 606 747 157, email: michal.kliment@bds-vb.cz,</li>
+                    <li>kontaktní osoba pro ochranu osobních údajů – Mgr. Marta Jochová, tel.: +420 606 747 158, email: marta.jochova@gmail.com.</li>
                   </ul>
                   
-                  <h3 className="font-bold mt-6 mb-3">3. Právní základ pro zpracování</h3>
+                  <h3 className="font-bold mt-6 mb-3">2. Jaké osobní údaje jsou zpracovávány, účel zpracování osobních údajů</h3>
                   <p>
-                    Osobní údaje zpracováváme na základě:
+                    V souvislosti se vzájemným obchodním vztahem jsou zpracovávány osobní údaje za účelem vedení evidence, plnění smluvních závazků a právních povinností stanovených právním řádem ČR.
                   </p>
-                  <ul>
-                    <li>Vašeho souhlasu</li>
-                    <li>Plnění smlouvy</li>
-                    <li>Plnění právních povinností</li>
-                    <li>Oprávněného zájmu správce</li>
-                  </ul>
-                  
-                  <h3 className="font-bold mt-6 mb-3">4. Doba uložení osobních údajů</h3>
                   <p>
-                    Osobní údaje uchováváme po dobu nezbytnou k naplnění účelu jejich zpracování, případně po dobu stanovenou právními předpisy.
+                    Společnost zpracovává osobních údaje, které jí byly poskytnuty - zejména jména a příjmení, název společnosti (obchodní firma), doručovací nebo jiná kontaktní adresa, e-mailové adresy, telefonního číslo a dalších údaje naplňujících definici článku 4 GDPR (dále v textu jen „osobní údaje").
                   </p>
                   
-                  <h3 className="font-bold mt-6 mb-3">5. Vaše práva</h3>
-                  <p>Máte právo:</p>
-                  <ul>
-                    <li>Na přístup ke svým osobním údajům</li>
-                    <li>Na opravu nepřesných údajů</li>
-                    <li>Na výmaz údajů</li>
-                    <li>Na omezení zpracování</li>
-                    <li>Na přenositelnost údajů</li>
-                    <li>Vznést námitku proti zpracování</li>
-                    <li>Podat stížnost u Úřadu pro ochranu osobních údajů</li>
-                  </ul>
-                  
-                  <h3 className="font-bold mt-6 mb-3">6. Kontaktní údaje</h3>
+                  <h3 className="font-bold mt-6 mb-3">3. Právní titul zpracovávání osobních údajů, a doba zpracování</h3>
                   <p>
-                    Pro uplatnění svých práv nebo dotazy k ochraně osobních údajů nás kontaktujte:
-                    <br />
-                    Email: truck@ntc-vb.cz
-                    <br />
-                    Telefon: +420 602 568 721
+                    Osobní údaje jsou získávány při předsmluvních aktivitách, při uzavíraní závazkových vztahů, plnění smluvních povinností, z důvodu oprávněného zájmu. Osobní údaje jsou dále získávány na základě informovaného souhlasu se zpracováním osobních údajů. Ke zpracovávání osobních údajů dochází na základě ustanovení článku 6 odst. 1 písm. a) až f) GDPR).
+                  </p>
+                  <p>
+                    Osobní údaje budou zpracovávány po dobu trvání právního vztahu, a po jeho skončení budou skartovány ve lhůtách a způsobem stanoveným příslušnými právními předpisy.
+                  </p>
+                  
+                  <h3 className="font-bold mt-6 mb-3">4. Způsob zpracování osobních údajů, zabezpečení osobních údajů</h3>
+                  <p>
+                    Společnost se zavazuje plně respektovat důvěrný charakter poskytnutých osobních údajů, a zpracovávat osobní údaje v souladu se zásadou zákonnosti, korektnosti, transparentnosti, účelového omezení, minimalizace údajů, přesnosti, omezení uložení, integrity a důvěrnosti (článek 5 GDPR).
+                  </p>
+                  <p>
+                    Osobní údaje jsou zabezpečeny a chráněny proti neoprávněnému zpracování. Osobní údaje jsou ukládány v databázi s přísným zabezpečením proti zneužití, poškození nebo zničení a nejsou poskytovány třetím stranám.
+                  </p>
+                  <p>
+                    Při zpracování osobních údajů jsou zavedeny postupy a mechanismy k jejich zabezpečení a ochraně. Osobní údaje fyzických osob jsou zpracovávány pro stanovený účel, stanovenými prostředky a způsobem, který zajišťuje nejvyšší možnou bezpečnost osobních údajů a zabraňuje jakémukoliv neoprávněnému přístupu k osobním údajům. Osobní údaje jsou zpracovávány po stanovenou dobu.
+                  </p>
+                  <p>
+                    V rámci společnosti jsou dodržována odpovídající technická a organizační opatření, tak aby bylo zajištěno zabezpečení odpovídající všem identifikovaným rizikům. Veškeré osoby, které přicházejí do styku s osobními údaji, tak činí v souladu s účelem zpracování, jsou k zpracování osobních údajů oprávněné, mají povinnost zpracovávat osobní údaje v souladu se zásadami GDPR, a mají povinnost dodržovat mlčenlivost.
+                  </p>
+                  <p>
+                    Osobní údaje jsou poskytnuty třetím stranám pouze z důvodu plnění smluvních povinností nebo z důvodu splnění právních povinností. Třetí strana je povinna s osobními údaji nakládat dle pokynů společnosti a zpracovávat je v souladu se zásadami a povinnostmi stanovenými GDPR.
+                  </p>
+                  
+                  <h3 className="font-bold mt-6 mb-3">5. Práva subjektů osobních údajů</h3>
+                  <p>
+                    V návaznosti na zpracovávání osobních údajů, má subjekt údajů následující práva - právo na přístup k osobním údajům (dle čl. 15 GDPR), právo na opravu (dle čl. 16 GDPR), právo na výmaz (dle čl. 17 GDPR), právo na omezení zpracování (dle čl. 18 GDPR), právo na přenositelnost údajů (dle čl. 20 GDPR), právo vznést námitku (dle čl. 21 GDPR), právo odvolat souhlas (dle čl. 7 GDPR). V případě pochybností o dodržování povinností souvisejících se zpracováním osobních údajů právo obrátit se na kontaktní osobu na email: marta.jochova@gmail.com nebo na Úřad na ochranu osobních údajů.
+                  </p>
+                  <p>
+                    Udělený souhlas můžete odvolat kdykoli a bez udání důvodu zasláním zprávy o odvolání souhlasu na email: marta.jochova@gmail.com.
                   </p>
                 </div>
               </DialogContent>
