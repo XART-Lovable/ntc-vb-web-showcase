@@ -40,7 +40,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {services.map(service => {
           const Icon = service.icon;
-          return <div key={service.number} className="bg-card p-6 shadow-lg hover:shadow-xl transition-shadow group cursor-pointer">
+          return <div key={service.number} className="bg-card p-6 shadow-lg hover:shadow-xl transition-shadow group">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="bg-primary text-primary-foreground w-8 h-8 flex items-center justify-center font-bold">
                     {service.number}
