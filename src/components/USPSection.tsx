@@ -28,7 +28,7 @@ const USPSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-foreground-dark mb-4">Proč si vybrat NTC?</h2>
+          <h2 className="text-3xl font-bold text-foreground-dark mb-4">Stabilní partner pro každého dopravce.</h2>
           <p className="text-foreground max-w-2xl mx-auto">
             Jsme komplexním partnerem v oblasti užitkové dopravy s dlouholetými zkušenostmi a špičkovými službami.
           </p>
