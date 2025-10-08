@@ -23,20 +23,20 @@ const HeroSection = () => {
     icon: Wrench
   }];
   return <section className="relative">
-      <div className="relative h-[600px] bg-cover bg-center" style={{
+      <div className="relative h-[700px] md:h-[600px] bg-cover bg-center" style={{
       backgroundImage: `url(${heroImage})`
     }}>
         <div className="absolute inset-0 bg-foreground-dark/70" />
         
         <div className="container mx-auto px-4 h-full relative z-10">
           <div className="flex flex-col justify-center h-full max-w-3xl">
-            <h1 className="text-5xl font-bold text-background mb-6 leading-tight">Skladová a nákladní vozidla</h1>
-            <p className="text-xl text-background leading-relaxed">Přední český dodavatel a servis skladových a nákladních vozidel značky MAN i dalších značek. Poskytujeme komplexní řešení od prodeje nových i ojetých vozidel přes vlastní výrobu nástaveb až po autorizovaný servis. Díky dlouholetým zkušenostem a rozsáhlé servisní síti jsme spolehlivým partnerem pro všechny profesionály v oblasti užitkové dopravy.</p>
+            <h1 className="text-3xl md:text-5xl font-bold text-background mb-4 md:mb-6 leading-tight">Skladová a nákladní vozidla</h1>
+            <p className="text-base md:text-xl text-background leading-relaxed mb-24 md:mb-0">Přední český dodavatel a servis skladových a nákladních vozidel značky MAN i dalších značek. Poskytujeme komplexní řešení od prodeje nových i ojetých vozidel přes vlastní výrobu nástaveb až po autorizovaný servis. Díky dlouholetým zkušenostem a rozsáhlé servisní síti jsme spolehlivým partnerem pro všechny profesionály v oblasti užitkové dopravy.</p>
           </div>
         </div>
       </div>
 
-      <div className="container mx-auto px-4 relative -mt-16 z-20">
+      <div className="container mx-auto px-4 relative -mt-20 md:-mt-16 z-20">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {services.map(service => {
           const Icon = service.icon;
