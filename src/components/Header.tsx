@@ -26,6 +26,14 @@ const Header = () => {
               <Mail className="h-5 w-5" />
               <span className="font-semibold">truck@ntc-vb.cz</span>
             </a>
+            
+            <a 
+              href="tel:+420724249047" 
+              className="flex items-center gap-2 text-foreground-dark hover:text-primary transition-colors"
+            >
+              <Phone className="h-5 w-5" />
+              <span className="font-semibold">Help line 24: +420 724 249 047</span>
+            </a>
           </div>
         </div>
       </div>
