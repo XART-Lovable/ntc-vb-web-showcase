@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-truck-new.jpg";
+import heroImage from "@/assets/hero-truck.jpg";
 import { Warehouse, Truck, TruckIcon, Container, Wrench } from "lucide-react";
 const HeroSection = () => {
   const services = [{
