@@ -30,8 +30,8 @@ const HeroSection = () => {
         
         <div className="container mx-auto px-4 h-full relative z-10">
           <div className="flex flex-col justify-center h-full max-w-3xl">
-            <h1 className="text-3xl md:text-5xl font-bold text-background mb-4 md:mb-6 leading-tight">Skladová a nákladní vozidla</h1>
-            <p className="text-base md:text-xl text-background leading-relaxed mb-24 md:mb-0">Přední český dodavatel a servis skladových a nákladních vozidel značky MAN i dalších značek. Poskytujeme komplexní řešení od prodeje nových i ojetých vozidel přes vlastní výrobu nástaveb až po autorizovaný servis. Díky dlouholetým zkušenostem a rozsáhlé servisní síti jsme spolehlivým partnerem pro všechny profesionály v oblasti užitkové dopravy.</p>
+            <h1 className="text-3xl md:text-5xl font-bold text-background mb-4 md:mb-6 leading-tight">Váš partner pro nákup dopravní techniky</h1>
+            <p className="text-base md:text-xl text-background leading-relaxed mb-24 md:mb-0">Poskytujeme komplexní řešení od prodeje nových i ojetých vozidel přes vlastní výrobu nástaveb až po autorizovaný servis. Jako člen skupiny HESTI GROUP navazujeme na silné zázemí a tradici v oblasti užitkové dopravy. Díky dlouholetým zkušenostem a rozsáhlé servisní síti jsme spolehlivým partnerem pro všechny profesionály.</p>
           </div>
         </div>
       </div>
