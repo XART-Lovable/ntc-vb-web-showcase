@@ -94,7 +94,7 @@ const ContactSection = () => {
                 <div>
                   <p className="font-semibold text-foreground-dark">Telefon servis:</p>
                   <p className="text-foreground">
-                    <a href="tel:+420515271031" className="hover:text-primary transition-colors">515 271 031</a>
+                    <a href="tel:+420724249047" className="hover:text-primary transition-colors">+420 724 249 047</a>
                   </p>
                 </div>
               </div>
