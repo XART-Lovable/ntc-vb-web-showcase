@@ -1,5 +1,6 @@
 import { Network, Factory, Award, Boxes } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import hestiLogo from "@/assets/logo-hesti.svg";
 const USPSection = () => {
   const usps = [{
     icon: Network,
@@ -46,6 +47,11 @@ const USPSection = () => {
               Více o HESTI GROUP
             </a>
           </Button>
+          <div className="mt-8">
+            <a href="https://hesti.cz/kontakt/o-nas/" target="_blank" rel="noopener noreferrer">
+              <img src={hestiLogo} alt="HESTI GROUP" className="h-16 md:h-20 w-auto mx-auto" style={{ imageRendering: 'auto' }} />
+            </a>
+          </div>
         </div>
       </div>
     </section>;
