@@ -4,23 +4,28 @@ const HeroSection = () => {
   const services = [{
     number: "1",
     title: "Skladová vozidla",
-    icon: Warehouse
+    icon: Warehouse,
+    url: "https://hesti.cz/katalog-novych-vozidel-man/"
   }, {
     number: "2",
     title: "Nákladní vozy MAN",
-    icon: Truck
+    icon: Truck,
+    url: "https://hesti.cz/prodej-man-tahac/"
   }, {
     number: "3",
     title: "Užitkové vozy MAN TGE",
-    icon: TruckIcon
+    icon: TruckIcon,
+    url: "https://hesti.cz/uzitkove-vozy-man/"
   }, {
     number: "4",
     title: "Návěsy",
-    icon: Container
+    icon: Container,
+    url: "https://hesti.cz/navesy/"
   }, {
     number: "5",
     title: "Servis vozidel",
-    icon: Wrench
+    icon: Wrench,
+    url: "https://hesti.cz/servis-man-krone-vw-nahradni-dily/"
   }];
   return <section className="relative">
       <div className="relative h-[700px] md:h-[600px] bg-cover bg-center" style={{
@@ -40,7 +45,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
           {services.map(service => {
           const Icon = service.icon;
-          return <div key={service.number} className="bg-card p-6 shadow-lg hover:shadow-xl transition-shadow group">
+          return <a key={service.number} href={service.url} target="_blank" rel="noopener noreferrer" className="bg-card p-6 shadow-lg hover:shadow-xl transition-shadow group cursor-pointer">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="bg-primary text-primary-foreground w-8 h-8 flex items-center justify-center font-bold">
                     {service.number}
@@ -50,7 +55,7 @@ const HeroSection = () => {
                 <h3 className="font-semibold text-foreground-dark group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-              </div>;
+              </a>;
         })}
         </div>
       </div>
