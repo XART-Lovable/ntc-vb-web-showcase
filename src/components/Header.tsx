@@ -12,14 +12,6 @@ const Header = () => {
           
           <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6">
             <a 
-              href="mailto:obchod@ntc-vb.cz" 
-              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
-            >
-              <Mail className="h-4 w-4 md:h-5 md:w-5" />
-              <span className="font-semibold text-sm md:text-base">obchod@ntc-vb.cz</span>
-            </a>
-            
-            <a 
               href="tel:+420725409148" 
               className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
             >
@@ -33,6 +25,14 @@ const Header = () => {
             >
               <Phone className="h-4 w-4 md:h-5 md:w-5" />
               <span className="font-semibold text-sm md:text-base">Servis: +420 724 249 047</span>
+            </a>
+            
+            <a 
+              href="mailto:obchod@ntc-vb.cz" 
+              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+            >
+              <Mail className="h-4 w-4 md:h-5 md:w-5" />
+              <span className="font-semibold text-sm md:text-base">obchod@ntc-vb.cz</span>
             </a>
           </div>
         </div>
