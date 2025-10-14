@@ -7,8 +7,8 @@ const Header = () => {
     <header className="bg-background border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-6">
-            <img src={ntcLogo} alt="NTC s.r.o. - Skladová a nákladní vozidla MAN, servis vozidel Velká Bíteš" className="h-12 md:h-14 w-auto" style={{ imageRendering: 'auto' }} />
+          <div className="flex items-center gap-8">
+            <img src={ntcLogo} alt="NTC s.r.o. - Skladová a nákladní vozidla MAN, servis vozidel Velká Bíteš" className="h-10 md:h-12 w-auto" style={{ imageRendering: 'auto' }} />
             <a href="https://hesti.cz/kontakt/o-nas/" target="_blank" rel="noopener noreferrer">
               <img src={hestiLogo} alt="HESTI GROUP" className="h-12 md:h-14 w-auto" style={{ imageRendering: 'auto' }} />
             </a>
