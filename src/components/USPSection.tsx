@@ -1,4 +1,5 @@
 import { Network, Factory, Award, Boxes } from "lucide-react";
+import { Button } from "@/components/ui/button";
 const USPSection = () => {
   const usps = [{
     icon: Network,
@@ -37,6 +38,14 @@ const USPSection = () => {
                 <p className="text-foreground">{usp.description}</p>
               </div>;
         })}
+        </div>
+        
+        <div className="text-center mt-12">
+          <Button asChild size="lg">
+            <a href="https://hesti.cz/kontakt/o-nas/" target="_blank" rel="noopener noreferrer">
+              Více o HESTI GROUP
+            </a>
+          </Button>
         </div>
       </div>
     </section>;
