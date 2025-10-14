@@ -1,13 +1,17 @@
 import { Phone, Mail, Facebook } from "lucide-react";
 import ntcLogo from "@/assets/ntc-logo-new.png";
+import hestiLogo from "@/assets/logo-hesti.svg";
 
 const Header = () => {
   return (
     <header className="bg-background border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center">
+          <div className="flex items-center gap-6">
             <img src={ntcLogo} alt="NTC s.r.o. - Skladová a nákladní vozidla MAN, servis vozidel Velká Bíteš" className="h-12 md:h-14 w-auto" style={{ imageRendering: 'auto' }} />
+            <a href="https://hesti.cz/kontakt/o-nas/" target="_blank" rel="noopener noreferrer">
+              <img src={hestiLogo} alt="HESTI GROUP" className="h-12 md:h-14 w-auto" style={{ imageRendering: 'auto' }} />
+            </a>
           </div>
           
           <div className="flex flex-col md:flex-row items-center gap-3 md:gap-6">
