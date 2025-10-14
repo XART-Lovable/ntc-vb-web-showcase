@@ -1,5 +1,6 @@
 import heroImage from "@/assets/hero-truck.jpg";
 import { Warehouse, Truck, TruckIcon, Container, Wrench } from "lucide-react";
+import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   const services = [{
     number: "1",
@@ -57,6 +58,14 @@ const HeroSection = () => {
                 </h3>
               </a>;
         })}
+        </div>
+        
+        <div className="text-center mt-8">
+          <Button asChild size="lg">
+            <a href="https://hesti.cz/novinky-a-akce/" target="_blank" rel="noopener noreferrer">
+              Sledujte novinky a akce
+            </a>
+          </Button>
         </div>
       </div>
     </section>;
