@@ -1,4 +1,4 @@
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, Facebook } from "lucide-react";
 import ntcLogo from "@/assets/ntc-velka-bites.png";
 
 const Header = () => {
@@ -33,6 +33,15 @@ const Header = () => {
             >
               <Mail className="h-4 w-4 md:h-5 md:w-5" />
               <span className="font-semibold text-sm md:text-base">obchod@ntc-vb.cz</span>
+            </a>
+            
+            <a 
+              href="https://www.facebook.com/people/NTC-sro/61577946029562/" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-foreground hover:text-primary transition-colors"
+            >
+              <Facebook className="h-4 w-4 md:h-5 md:w-5" />
             </a>
           </div>
         </div>
