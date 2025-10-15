@@ -39,9 +39,7 @@ const ContactSection = () => {
                 <div>
                   <p className="font-semibold text-foreground-dark">Email:</p>
                   <p className="text-foreground">
-                    
-                    {", "}
-                    <a href="mailto:tlm@ntc-vb.cz" className="hover:text-primary transition-colors">tlm@ntc-vb.cz</a>
+                    <a href="mailto:obchod@ntc-vb.cz" className="hover:text-primary transition-colors">obchod@ntc-vb.cz</a>
                   </p>
                 </div>
               </div>
