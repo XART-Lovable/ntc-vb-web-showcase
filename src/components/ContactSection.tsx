@@ -70,21 +70,19 @@ const ContactSection = () => {
               </div>
               
               <div className="flex items-start gap-3">
-                <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                <Clock className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-foreground-dark">Help line 24:</p>
-                  <p className="text-foreground">
-                    <a href="tel:+420724249047" className="hover:text-primary transition-colors font-bold">724 249 047</a>
-                  </p>
+                  <p className="font-semibold text-foreground-dark">Otevírací doba:</p>
+                  <p className="text-foreground">Po–Pá 6:00–17:00, So 6:00–13:00</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-foreground-dark">Telefon servis:</p>
+                  <p className="font-semibold text-foreground-dark">Help line 24:</p>
                   <p className="text-foreground">
-                    <a href="tel:+420724249047" className="hover:text-primary transition-colors">+420 724 249 047</a>
+                    <a href="tel:+420724249047" className="hover:text-primary transition-colors font-bold">+420 724 249 047</a>
                   </p>
                 </div>
               </div>
@@ -95,8 +93,6 @@ const ContactSection = () => {
                   <p className="font-semibold text-foreground-dark">Email:</p>
                   <p className="text-foreground">
                     <a href="mailto:servisznojmo@ntc-vb.cz" className="hover:text-primary transition-colors">servisznojmo@ntc-vb.cz</a>
-                    {", "}
-                    <a href="mailto:skladznojmo@ntc-vb.cz" className="hover:text-primary transition-colors">skladznojmo@ntc-vb.cz</a>
                   </p>
                 </div>
               </div>
