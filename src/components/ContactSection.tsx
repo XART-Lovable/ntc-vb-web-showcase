@@ -1,8 +1,6 @@
 import { MapPin, Clock, Phone, Mail } from "lucide-react";
-
 const ContactSection = () => {
-  return (
-    <section className="py-20 bg-background">
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Prodej */}
@@ -22,7 +20,7 @@ const ContactSection = () => {
                 <Clock className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold text-foreground-dark">Otevírací doba:</p>
-                  <p className="text-foreground">Po–Pá 8:00–17:00, So po dohodě</p>
+                  <p className="text-foreground">Po–Pá 7:00–16:00, So po dohodě</p>
                 </div>
               </div>
               
@@ -31,9 +29,7 @@ const ContactSection = () => {
                 <div>
                   <p className="font-semibold text-foreground-dark">Telefon:</p>
                   <p className="text-foreground">
-                    <a href="tel:+420602568721" className="hover:text-primary transition-colors">602 568 721</a>
-                    {", "}
-                    <a href="tel:+420602729144" className="hover:text-primary transition-colors">602 729 144</a>
+                    <a href="tel:+420725409148" className="hover:text-primary transition-colors">+420 725 409 148</a>
                   </p>
                 </div>
               </div>
@@ -43,9 +39,7 @@ const ContactSection = () => {
                 <div>
                   <p className="font-semibold text-foreground-dark">Email:</p>
                   <p className="text-foreground">
-                    <a href="mailto:truck@ntc-vb.cz" className="hover:text-primary transition-colors">truck@ntc-vb.cz</a>
-                    {", "}
-                    <a href="mailto:tlm@ntc-vb.cz" className="hover:text-primary transition-colors">tlm@ntc-vb.cz</a>
+                    <a href="mailto:obchod@ntc-vb.cz" className="hover:text-primary transition-colors">obchod@ntc-vb.cz</a>
                   </p>
                 </div>
               </div>
@@ -56,15 +50,9 @@ const ContactSection = () => {
             </p>
             
             <div className="h-64 bg-muted rounded overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Košíkov+81,+595+01+Velká+Bíteš&zoom=15"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Košíkov+81,+595+01+Velká+Bíteš&zoom=15" width="100%" height="100%" style={{
+              border: 0
+            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
             </div>
           </div>
 
@@ -82,21 +70,19 @@ const ContactSection = () => {
               </div>
               
               <div className="flex items-start gap-3">
-                <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
+                <Clock className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-foreground-dark">Help line 24:</p>
-                  <p className="text-foreground">
-                    <a href="tel:+420724249047" className="hover:text-primary transition-colors font-bold">724 249 047</a>
-                  </p>
+                  <p className="font-semibold text-foreground-dark">Otevírací doba:</p>
+                  <p className="text-foreground">Po–Pá 6:00–17:00, So 6:00–13:00</p>
                 </div>
               </div>
               
               <div className="flex items-start gap-3">
                 <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div>
-                  <p className="font-semibold text-foreground-dark">Telefon servis:</p>
+                  <p className="font-semibold text-foreground-dark">Help line 24:</p>
                   <p className="text-foreground">
-                    <a href="tel:+420515271031" className="hover:text-primary transition-colors">515 271 031</a>
+                    <a href="tel:+420724249047" className="hover:text-primary transition-colors font-bold">+420 724 249 047</a>
                   </p>
                 </div>
               </div>
@@ -107,8 +93,6 @@ const ContactSection = () => {
                   <p className="font-semibold text-foreground-dark">Email:</p>
                   <p className="text-foreground">
                     <a href="mailto:servisznojmo@ntc-vb.cz" className="hover:text-primary transition-colors">servisznojmo@ntc-vb.cz</a>
-                    {", "}
-                    <a href="mailto:skladznojmo@ntc-vb.cz" className="hover:text-primary transition-colors">skladznojmo@ntc-vb.cz</a>
                   </p>
                 </div>
               </div>
@@ -119,21 +103,13 @@ const ContactSection = () => {
             </p>
             
             <div className="h-64 bg-muted rounded overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Bantice+72,+671+61&zoom=15"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Bantice+72,+671+61&zoom=15" width="100%" height="100%" style={{
+              border: 0
+            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;

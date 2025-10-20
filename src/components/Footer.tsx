@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="flex flex-col justify-end">
+          <div className="flex flex-col justify-end space-y-2">
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger asChild>
                 <Button variant="link" className="text-background hover:text-primary justify-start p-0">
@@ -104,6 +104,14 @@ const Footer = () => {
                 </div>
               </DialogContent>
             </Dialog>
+            <a 
+              href="https://hesti.cz/vseobecne-obchodni-podminky/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-background hover:text-primary text-sm underline-offset-4 hover:underline text-left"
+            >
+              Všeobecné obchodní podmínky
+            </a>
           </div>
         </div>
         

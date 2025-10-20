@@ -1,34 +1,28 @@
 import { Network, Factory, Award, Boxes } from "lucide-react";
-
+import { Button } from "@/components/ui/button";
+import hestiLogo from "@/assets/logo-hesti.svg";
 const USPSection = () => {
-  const usps = [
-    {
-      icon: Network,
-      title: "Největší servisní síť v ČR",
-      description: "11 servisních poboček",
-    },
-    {
-      icon: Factory,
-      title: "Vlastní výroba",
-      description: "Nástavby pro užitková vozidla i návěsy",
-    },
-    {
-      icon: Award,
-      title: "Certifikovaný prodejce",
-      description: "Prodej nových i ojetých tahačů MAN",
-    },
-    {
-      icon: Boxes,
-      title: "Velký výběr návěsů",
-      description: "Široká nabídka všech značek a druhů",
-    },
-  ];
-
-  return (
-    <section className="py-20 bg-background">
+  const usps = [{
+    icon: Network,
+    title: "Největší servisní síť v ČR",
+    description: "11 servisních poboček"
+  }, {
+    icon: Factory,
+    title: "Vlastní výroba",
+    description: "Nástavby pro užitková vozidla i návěsy"
+  }, {
+    icon: Award,
+    title: "Certifikovaný prodejce",
+    description: "Prodej nových i ojetých tahačů MAN"
+  }, {
+    icon: Boxes,
+    title: "Velký výběr návěsů",
+    description: "Široká nabídka všech značek a druhů"
+  }];
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-foreground-dark mb-4">Stabilní partner pro každého dopravce.</h2>
+          <h2 className="text-3xl font-bold text-foreground-dark mb-4">HESTI GROUP: stabilní partner pro každého dopravce.</h2>
           <p className="text-foreground max-w-2xl mx-auto">
             Jsme komplexním partnerem v oblasti užitkové dopravy s dlouholetými zkušenostmi a špičkovými službami.
           </p>
@@ -36,21 +30,30 @@ const USPSection = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {usps.map((usp, index) => {
-            const Icon = usp.icon;
-            return (
-              <div key={index} className="text-center">
+          const Icon = usp.icon;
+          return <div key={index} className="text-center">
                 <div className="bg-primary w-20 h-20 mx-auto mb-4 flex items-center justify-center">
                   <Icon className="h-10 w-10 text-primary-foreground" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground-dark mb-2">{usp.title}</h3>
                 <p className="text-foreground">{usp.description}</p>
-              </div>
-            );
-          })}
+              </div>;
+        })}
+        </div>
+        
+        <div className="text-center mt-12">
+          <Button asChild size="lg">
+            <a href="https://hesti.cz/kontakt/o-nas/" target="_blank" rel="noopener noreferrer">
+              Více o HESTI GROUP
+            </a>
+          </Button>
+          <div className="mt-8">
+            <a href="https://hesti.cz/kontakt/o-nas/" target="_blank" rel="noopener noreferrer">
+              <img src={hestiLogo} alt="HESTI GROUP" className="h-16 md:h-20 w-auto mx-auto" style={{ imageRendering: 'auto' }} />
+            </a>
+          </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default USPSection;
