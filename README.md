@@ -1,10 +1,12 @@
-# Welcome to your Lovable project
+# NKT - Statický web (SSG)
 
-## Project info
+## O projektu
 
-**URL**: https://lovable.dev/projects/0efb2394-2d4f-4b2a-bdd2-1463e1dc8ee8
+Tento projekt je webová prezentace společnosti NKT, převedená na staticky generovaný web (SSG).
 
-## How can I edit this code?
+**Původní URL**: https://lovable.dev/projects/0efb2394-2d4f-4b2a-bdd2-1463e1dc8ee8
+
+## Vývoj a editace kódu
 
 There are several ways of editing your application.
 
@@ -36,21 +38,42 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Použité technologie
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Projekt je postavený na následujících technologiích:
 
-**Use GitHub Codespaces**
+- React + React Router
+- TypeScript
+- Vite (buildovací nástroj)
+- shadcn-ui (komponenty)
+- Tailwind CSS (styling)
+- Static Site Generation (SSG)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Statický build a nasazení
 
-## What technologies are used for this project?
+### Vytvoření statického buildu
+
+Pro vytvoření statické verze webu použijte:
+
+```bash
+npm run build:ssg
+```
+
+Výsledné soubory budou v adresáři `dist/`.
+
+### Testování statického buildu
+
+Pro lokální otestování statického buildu:
+
+```bash
+npm run serve:static
+```
+
+### Nasazení na produkci
+
+Pro nasazení stačí zkopírovat obsah adresáře `dist/` na hosting.
+
+## Poznámky k SSG implementaci
 
 This project is built with:
 
@@ -60,14 +83,47 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+### Browser API a statická generace
 
-Simply open [Lovable](https://lovable.dev/projects/0efb2394-2d4f-4b2a-bdd2-1463e1dc8ee8) and click on Share -> Publish.
+Pro kód, který používá browser API (window, document, localStorage, atd.), používejte helpery z `src/lib/browser-utils.ts`:
 
-## Can I connect a custom domain to my Lovable project?
+```tsx
+import { isBrowser, safeWindow } from '@/lib/browser-utils';
 
-Yes, you can!
+// Kontrola, zda kód běží v prohlížeči
+if (isBrowser) {
+  // Zde můžete bezpečně používat browser API
+}
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+// Nebo použití helper funkce pro bezpečné volání browser API
+const storedValue = safeWindow(() => window.localStorage.getItem('myKey'), null);
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+### Konfigurace serveru
+
+#### Apache
+
+Pro Apache je součástí buildu soubor `.htaccess`, který zajišťuje správné směrování požadavků.
+
+#### Nginx
+
+Pro Nginx je třeba nastavit konfiguraci:
+
+```nginx
+server {
+    listen 80;
+    server_name domena.cz;
+    root /cesta/k/dist;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}
+```
+
+### SEO optimalizace
+
+Pro zlepšení SEO je vhodné aktualizovat:
+- Metadata v souboru `index.html`
+- Přidat strukturovaná data pro Google ve formátu JSON-LD
