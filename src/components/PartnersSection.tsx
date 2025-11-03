@@ -12,7 +12,7 @@ const PartnersSection = () => {
     { name: "MAN", url: "https://hesti.cz/man/", image: manLogo },
     { name: "KRONE", url: "https://hesti.cz/kategorie-navesu/krone/", image: kroneLogo },
     { name: "MEILLER Kipper", url: "https://hesti.cz/kategorie-navesu/meiller/", image: meilerLogo },
-    { name: "D-TEC", url: "https://hesti.cz/kategorie-navesu/d-tech/", image: dtecLogo },
+    { name: "D-TEC", url: "https://hesti.cz/kategorie-navesu/d-tec/", image: dtecLogo },
     { name: "STAS", url: "https://hesti.cz/kategorie-navesu/stas/", image: stasLogo },
     { name: "Nooteboom Trailers", url: "https://hesti.cz/kategorie-navesu/nooteboom/", image: nooteboomLogo },
     { name: "Langendorf", url: "https://hesti.cz/kategorie-navesu/langendorf/", image: lagendorfLogo },
