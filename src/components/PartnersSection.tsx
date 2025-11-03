@@ -9,7 +9,7 @@ import omepsLogo from "@/assets/partners/omeps.jpg";
 
 const PartnersSection = () => {
   const partners = [
-    { name: "MAN", url: "https://hesti.cz/man/", image: manLogo },
+    { name: "MAN", url: "https://hesti.cz/prodej-man-tahac/", image: manLogo },
     { name: "KRONE", url: "https://hesti.cz/kategorie-navesu/krone/", image: kroneLogo },
     { name: "MEILLER Kipper", url: "https://hesti.cz/kategorie-navesu/meiller/", image: meilerLogo },
     { name: "D-TEC", url: "https://hesti.cz/kategorie-navesu/d-tec/", image: dtecLogo },
