@@ -22,6 +22,41 @@ const Footer = () => {
           </div>
           
           <div className="flex flex-col justify-end space-y-2">
+            <div className="mb-4">
+              <h3 className="text-lg font-bold mb-2">Certifikáty ISO</h3>
+              <ul className="space-y-1 text-sm">
+                <li>
+                  <a 
+                    href="/Certifikat_ISO_9001.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-background hover:text-primary underline-offset-4 hover:underline"
+                  >
+                    ISO 9001
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="/Certifikat_ISO_14001.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-background hover:text-primary underline-offset-4 hover:underline"
+                  >
+                    ISO 14001
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="/Certifikat_ISO_45001.pdf" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-background hover:text-primary underline-offset-4 hover:underline"
+                  >
+                    ISO 45001
+                  </a>
+                </li>
+              </ul>
+            </div>
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogTrigger asChild>
                 <Button variant="link" className="text-background hover:text-primary justify-start p-0">
